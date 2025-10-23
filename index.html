@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhlak Rasulullah SAW - Media Pembelajaran Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header dengan navigasi -->
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-star-and-crescent"></i> Akhlak Rasulullah SAW</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link active">Beranda</a></li>
+                    <li><a href="#materi" class="nav-link">Materi</a></li>
+                    <li><a href="#games" class="nav-link">Permainan</a></li>
+                    <li><a href="#quiz" class="nav-link">Kuis</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Belajar Akhlak Mulia Rasulullah SAW</h2>
+                <p>Mari kita teladani akhlak terpuji Rasulullah Muhammad SAW dalam kehidupan sehari-hari!</p>
+                <button id="start-btn" class="btn-primary">Mulai Belajar</button>
+            </div>
+            <div class="hero-image">
+                <div class="character">
+                    <div class="face">
+                        <div class="eyes">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                        </div>
+                        <div class="smile"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materi Pembelajaran -->
+    <section id="materi" class="materi-section">
+        <div class="container">
+            <h2>Materi Pembelajaran</h2>
+            <div class="materi-grid">
+                <div class="materi-card" data-materi="jujur">
+                    <div class="card-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Kejujuran</h3>
+                    <p>Rasulullah SAW dijuluki Al-Amin (yang dapat dipercaya) karena kejujurannya</p>
+                    <button class="btn-secondary">Pelajari</button>
+                </div>
+                <div class="materi-card" data-materi="sabar">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Kesabaran</h3>
+                    <p>Rasulullah SAW selalu sabar menghadapi cobaan dan ujian</p>
+                    <button class="btn-secondary">Pelajari</button>
+                </div>
+                <div class="materi-card" data-materi="sayang">
+                    <div class="card-icon">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <h3>Penyayang</h3>
+                    <p>Rasulullah SAW sangat menyayangi anak-anak, orang tua, dan semua makhluk</p>
+                    <button class="btn-secondary">Pelajari</button>
+                </div>
+                <div class="materi-card" data-materi="adil">
+                    <div class="card-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Keadilan</h3>
+                    <p>Rasulullah SAW selalu bersikap adil kepada semua orang tanpa pandang bulu</p>
+                    <button class="btn-secondary">Pelajari</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Materi -->
+    <section id="detail-materi" class="detail-materi">
+        <div class="container">
+            <div id="materi-content">
+                <h2>Pilih salah satu materi untuk mempelajarinya</h2>
+                <p>Klik tombol "Pelajari" pada kartu materi di atas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Interaktif -->
+    <section id="games" class="games-section">
+        <div class="container">
+            <h2>Permainan Interaktif</h2>
+            <div class="game-container">
+                <div class="game-intro">
+                    <h3>Tebak Akhlak Rasulullah</h3>
+                    <p>Pilih gambar yang menunjukkan akhlak terpuji Rasulullah SAW</p>
+                </div>
+                <div class="game-board">
+                    <div class="game-card" data-correct="true">
+                        <div class="game-illustration good">
+                            <div class="face">
+                                <div class="eyes">
+                                    <div class="eye"></div>
+                                    <div class="eye"></div>
+                                </div>
+                                <div class="smile"></div>
+                            </div>
+                        </div>
+                        <p>Memberi Senyuman</p>
+                    </div>
+                    <div class="game-card" data-correct="false">
+                        <div class="game-illustration bad">
+                            <div class="face">
+                                <div class="eyes">
+                                    <div class="eye angry"></div>
+                                    <div class="eye angry"></div>
+                                </div>
+                                <div class="frown"></div>
+                            </div>
+                        </div>
+                        <p>Marah-marah</p>
+                    </div>
+                    <div class="game-card" data-correct="true">
+                        <div class="game-illustration good">
+                            <div class="sharing">
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="hands">
+                                    <div class="hand left"></div>
+                                    <div class="hand right"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Berbagi dengan Sesama</p>
+                    </div>
+                    <div class="game-card" data-correct="false">
+                        <div class="game-illustration bad">
+                            <div class="selfish">
+                                <div class="person">
+                                    <div class="head"></div>
+                                    <div class="body"></div>
+                                </div>
+                                <div class="x-mark"></div>
+                            </div>
+                        </div>
+                        <p>Bersikap Egois</p>
+                    </div>
+                </div>
+                <div class="game-feedback">
+                    <p id="game-message">Pilih gambar yang menunjukkan akhlak terpuji!</p>
+                    <button id="reset-game" class="btn-primary">Main Lagi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kuis -->
+    <section id="quiz" class="quiz-section">
+        <div class="container">
+            <h2>Kuis Pengetahuan</h2>
+            <div class="quiz-container">
+                <div id="quiz-intro">
+                    <h3>Uji Pengetahuanmu tentang Akhlak Rasulullah SAW</h3>
+                    <p>Jawablah pertanyaan-pertanyaan berikut dengan benar!</p>
+                    <button id="start-quiz" class="btn-primary">Mulai Kuis</button>
+                </div>
+                <div id="quiz-questions" class="hidden">
+                    <div class="question">
+                        <h3 id="question-text">Pertanyaan akan muncul di sini</h3>
+                        <div class="options">
+                            <!-- Opsi jawaban akan diisi oleh JavaScript -->
+                        </div>
+                    </div>
+                    <div class="quiz-controls">
+                        <button id="next-question" class="btn-primary">Pertanyaan Berikutnya</button>
+                    </div>
+                </div>
+                <div id="quiz-results" class="hidden">
+                    <h3>Hasil Kuis</h3>
+                    <p id="score-text">Skor kamu: 0/5</p>
+                    <button id="restart-quiz" class="btn-primary">Ulangi Kuis</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Media Pembelajaran Digital - Akhlak Rasulullah SAW</p>
+            <p>Dibuat dengan ❤ untuk anak-anak SD</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
