@@ -1,5 +1,5 @@
 // Data materi pembelajaran
-const materiData = {
+const musik = {
     jujur: {
         title: "Kejujuran Rasulullah SAW",
         content: `
